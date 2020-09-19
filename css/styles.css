@@ -13,19 +13,23 @@
 margin: 0px;
 padding: 0px;
 }
-img{
-    display: block;
-}
 
 body {
     font-family: var(--main-font);
     font-style: normal;
     
 }
+img{
+    display: block;
+}
 .conteiner{
-    width: ;
-    padding: 0px 15px;
-    margin: 0px auto;
+    width: 1630px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 215px;
+    padding-bottom: 94px;
 }
 
 .list {
@@ -63,8 +67,14 @@ color: #2196F3;
 }
 /* === END LOGO === */
 /* === HEADER === */
+.header{
+    margin-bottom: 25px;
+    margin-top: 24px;
+}
 .header>.conteiner {
     display: flex;
+    align-items: center;
+    justify-content: space-around; 
 }
 .navigation {
     display: flex;
@@ -72,6 +82,15 @@ color: #2196F3;
 .navigation-list,
 .address-list {
     display: flex;
+    align-items: center;
+}
+.navigation-list-item,
+.address-list-link {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.navigation-list{
+    margin-left: 93px;
 }
 
 .navigation-list-link {
@@ -101,9 +120,14 @@ color: #2196F3;
 /* ====== HERO ====== */
 
 .dark-theme-hero {
-
 background-color: #2F303A;
 text-align: center;
+padding-bottom: 200px;
+padding-left: 452px;
+padding-top: 200px;
+padding-bottom: 280px;
+padding-right: 452px;
+height: 600px;
 }
 .hero-title{
 font-weight: 900;
@@ -111,11 +135,6 @@ font-size: 44px;
 line-height: 1.364;
 letter-spacing: 0.06em;
 color: var(--dark-theme-color);
-padding-left: 452px;
-padding-top: 200px;
-padding-bottom: 280px;
-padding-right: 452px;
-
 }
 .modal-btn {
     font-family: var(--main-font);
@@ -131,23 +150,59 @@ padding-right: 452px;
     border: none;
     min-width: 200px;
     height: 50px;
+    margin-top: 30px;
     }
 /* ====== ABOUT US ====== */
+.about-us> .conteiner{
+    display: flex;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    width: 1170px;
+    justify-content: space-between;
+    }
+    .about-list:not(:last-child) {
+     margin-right: 30px;   
+    }
+   
+
 .about-us-title{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-bottom: 10px;
+
 }
 .about-us-text{
 font-weight: 400;
 font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
+max-width: 270px;
 }
 /* ====== END ABOUT US ====== */
 /* ======   what are we doing ====== */
+.work{
+    margin-bottom: 94px;
+}
+.work>.work-list{
+    display: flex;
+    margin-bottom: 94px;
+    }
+.subtitle{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.work-list{
+    display: flex;
+    justify-content: center; 
+    
+}
+.work-item:not(:last-child) {
+ margin-right: 30px; 
+ }
+
 .subtitle {
 font-weight: 700;
 font-size: 36px;
@@ -156,6 +211,30 @@ letter-spacing: 0.03em;
 }
 /* ======  end what are we doing ====== */
 /* ======  OUR TEAM ====== */
+
+.team-subtitle{
+    padding-top: 94px;
+}
+.team-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+    }
+.team-conteiner{
+    text-align: center;
+    margin-top: 30px;
+    }
+.about-list-item:not(:last-child){
+    margin-right: 30px;
+}
+.about-list-item{
+    width: 270px;
+    height: 368px;
+}
+.team-position {
+margin-top: 10px;
+margin-bottom: 30px;
+}
 .team-name,
 .team-position {
 font-weight: 400;
@@ -165,12 +244,26 @@ letter-spacing: 0.03em;
 }
 /* ======  END OUR TEAM ====== */
 /* ====== CONTACT ====== */
+
+.footer>.conteiner {
+/* display: flex;
+flex-direction: column; */
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 215px;
+}
 .footer {
 width: 1600px;
-height: 252px;
-left: 58px;
-top: 2097px;
+height: 252px; 
 background: #2F303A;
+margin-left: auto;
+margin-right: auto;
+} 
+.contact-list{
+    margin-top: 20px;
+}
+.contact-list-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 .logo-white{
 color: var(--dark-theme-color);
