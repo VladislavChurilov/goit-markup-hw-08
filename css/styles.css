@@ -7,11 +7,15 @@
 --navigation-list-color: rgba(0, 0, 0, 0.25);
 --text-color: #757575;
 }
+html {
+    box-sizing: border-box;
+}
 *,
 *::before,
 *::after{
+    /* box-sizing: inherit;  */
 margin: 0px;
-padding: 0px;
+padding: 0px;  
 }
 
 body {
@@ -23,7 +27,7 @@ img{
     display: block;
 }
 .conteiner{
-    width: 1630px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -34,6 +38,8 @@ img{
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .link {
     text-decoration: none;
@@ -74,7 +80,7 @@ color: #2196F3;
 .header>.conteiner {
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
 }
 .navigation {
     display: flex;
@@ -84,8 +90,8 @@ color: #2196F3;
     display: flex;
     align-items: center;
 }
-.navigation-list-item,
-.address-list-link {
+.navigation-list-item:not(:last-child),
+.address-list-link:not(:last-child) {
     margin-left: auto;
     margin-right: 50px;
 }
@@ -119,15 +125,17 @@ color: #2196F3;
 /* =====END HEADER====== */
 /* ====== HERO ====== */
 
-.dark-theme-hero {
-background-color: #2F303A;
+.hero>.conteiner {
+background-color: #2F303A; 
 text-align: center;
 padding-bottom: 200px;
-padding-left: 452px;
+padding-left: 452px; 
 padding-top: 200px;
-padding-bottom: 280px;
-padding-right: 452px;
-height: 600px;
+padding-right: 452px;   
+margin-right: auto;
+margin-left: auto;
+width: 1600px;
+height: 600px;  
 }
 .hero-title{
 font-weight: 900;
@@ -153,17 +161,16 @@ color: var(--dark-theme-color);
     margin-top: 30px;
     }
 /* ====== ABOUT US ====== */
-.about-us> .conteiner{
-    display: flex;
+.about-us{
     margin-top: 94px;
     margin-bottom: 94px;
-    width: 1170px;
-    justify-content: space-between;
+    } 
+.about-item:not(:last-child) {
+    margin-right: 30px;   
     }
-    .about-list:not(:last-child) {
-     margin-right: 30px;   
-    }
-   
+.about-list{
+    display: flex;
+}       
 
 .about-us-title{
 font-weight: 700;
@@ -212,17 +219,16 @@ letter-spacing: 0.03em;
 /* ======  end what are we doing ====== */
 /* ======  OUR TEAM ====== */
 
-.team-subtitle{
-    padding-top: 94px;
+.team{
+    margin-bottom: 94px;
 }
 .team-list{
     display: flex;
     justify-content: center;
-    margin-bottom: 94px;
     }
 .team-conteiner{
     text-align: center;
-    margin-top: 30px;
+    padding-top: 30px;
     }
 .about-list-item:not(:last-child){
     margin-right: 30px;
@@ -230,10 +236,10 @@ letter-spacing: 0.03em;
 .about-list-item{
     width: 270px;
     height: 368px;
+    padding-bottom: 30px;
 }
 .team-position {
-margin-top: 10px;
-margin-bottom: 30px;
+padding-top: 10px;
 }
 .team-name,
 .team-position {
@@ -244,22 +250,20 @@ letter-spacing: 0.03em;
 }
 /* ======  END OUR TEAM ====== */
 /* ====== CONTACT ====== */
-
-.footer>.conteiner {
+.footer {
+width: 1600px;
+background: #2F303A;
+margin-left: auto;
+margin-right: auto;
 padding-top: 60px;
 padding-bottom: 60px;
 padding-left: 215px;
 }
-.footer {
-width: 1600px;
-height: 252px; 
-background: #2F303A;
-margin-left: auto;
-margin-right: auto;
-} 
-.contact-list{
+
+.footer-address{
     margin-top: 20px;
 }
+ 
 .contact-list-item:not(:last-child) {
     margin-bottom: 9px;
 }
