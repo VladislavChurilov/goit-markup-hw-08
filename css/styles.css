@@ -300,19 +300,19 @@ color: rgba(255, 255, 255, 0.6);
     color: var(--accent-color);
 }
 /* ===BUTTON==== */
-.portfolio-section>.conteiner{
+.portfolio-section {
     margin-bottom: 94px;
-    max-width: 1200px;
+    margin-top: 94px;
     }
+
 .work-list{
     flex-wrap: wrap;
 }
+
 .portfolio-btn {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
-    padding-top: 94px;
-    padding-bottom: 16px;
+    margin-bottom: 50px;
     }
 .item:not(:last-child){
     margin-right: 8px;
