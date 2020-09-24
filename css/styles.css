@@ -74,8 +74,8 @@ color: #2196F3;
 /* === END LOGO === */
 /* === HEADER === */
 .header{
-    margin-bottom: 25px;
-    margin-top: 24px;
+    padding-bottom: 25px;
+    padding-top: 24px;
 }
 .header>.conteiner {
     display: flex;
@@ -124,25 +124,24 @@ color: #2196F3;
 }
 /* =====END HEADER====== */
 /* ====== HERO ====== */
-
+.hero{
+    background-color: #2F303A; 
+}
 .hero>.conteiner {
-background-color: #2F303A; 
 text-align: center;
 padding-bottom: 200px;
-padding-left: 452px; 
 padding-top: 200px;
-padding-right: 452px;   
-margin-right: auto;
-margin-left: auto;
-width: 1600px;
-height: 600px;  
 }
+
 .hero-title{
 font-weight: 900;
 font-size: 44px;
 line-height: 1.364;
 letter-spacing: 0.06em;
 color: var(--dark-theme-color);
+width: 696px;
+margin-right: auto;
+margin-left: auto;
 }
 .modal-btn {
     font-family: var(--main-font);
@@ -162,8 +161,8 @@ color: var(--dark-theme-color);
     }
 /* ====== ABOUT US ====== */
 .about-us{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top:  94px;
+    padding-bottom: 94px;
     } 
 .about-item:not(:last-child) {
     margin-right: 30px;   
@@ -191,11 +190,10 @@ max-width: 270px;
 /* ====== END ABOUT US ====== */
 /* ======   what are we doing ====== */
 .work{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .work>.work-list{
     display: flex;
-    margin-bottom: 94px;
     }
 .subtitle{
     text-align: center;
@@ -220,7 +218,7 @@ letter-spacing: 0.03em;
 /* ======  OUR TEAM ====== */
 
 .team{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .team-list{
     display: flex;
@@ -251,13 +249,9 @@ letter-spacing: 0.03em;
 /* ======  END OUR TEAM ====== */
 /* ====== CONTACT ====== */
 .footer {
-width: 1600px;
 background: #2F303A;
-margin-left: auto;
-margin-right: auto;
 padding-top: 60px;
 padding-bottom: 60px;
-padding-left: 215px;
 }
 
 .footer-address{
@@ -301,8 +295,8 @@ color: rgba(255, 255, 255, 0.6);
 }
 /* ===BUTTON==== */
 .portfolio-section {
-    margin-bottom: 94px;
-    margin-top: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
     }
 
 .work-list{
