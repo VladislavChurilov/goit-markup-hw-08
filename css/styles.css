@@ -218,7 +218,9 @@ letter-spacing: 0.03em;
 /* ======  OUR TEAM ====== */
 
 .team{
+    padding-top: 94px;
     padding-bottom: 94px;
+    background: #F5F4FA;
 }
 .team-list{
     display: flex;
