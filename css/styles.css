@@ -110,6 +110,7 @@ color: #2196F3;
 .address-svg {
 fill: #757575;
 margin-right: 10px;
+
 }
 .address-list-link :hover .address-svg{
     fill: var(--accent-color);
@@ -117,11 +118,14 @@ margin-right: 10px;
   
 .mail-link,
 .tel-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus, 
