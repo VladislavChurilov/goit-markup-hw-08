@@ -58,7 +58,7 @@
                         ЭФФЕКТИВНЫЕ РЕШЕНИЯ 
                         ДЛЯ ВАШЕГО БИЗНЕСА 
                     </h1>                     
-                    <button class="modal-btn" type="button">Заказать услугу</button>
+                    <button data-modal-open class="modal-btn" type="button">Заказать услугу</button>
                 </div>
         </section>
         <section class="about-us">
@@ -140,16 +140,25 @@
                 <div>
                     <ul class="work-list list">
                         <li class="work-item">
+                            <div class="image-title-conteiner">
+                                <p class="image-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                            </div>
                             <img src="./images/what-are-we-doing/111.jpg"
                              alt="программист-работает-за-столом-в-офисе"
                              width="370" height="294">
                         </li>
                         <li class="work-item">
+                            <div class="image-title-conteiner">
+                                <p class="image-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                            </div>
                             <img src="./images/what-are-we-doing/333.jpg"
                              alt="веб-дизайнер-разрабатывает-интерфейс-приложения-для-мобильных-телефонов"
                              width="370" height="294">
                         </li>
                         <li class="work-item">
+                            <div class="image-title-conteiner">
+                                <p class="image-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                            </div>
                             <img src="./images/what-are-we-doing/222.jpg"
                              alt="веб-дизайнер-с-рабочим-графическим-планшетом-для-подбора-цветов"
                              width="370" height="294">
@@ -158,8 +167,10 @@
                 </div>
             </div>
         </section>
-        <section class="team">
-            <!-- Our team -->
+
+        <!-- Our team -->
+
+        <section class="team">            
             <div class="conteiner">
                 <h2 class="team-subtitle subtitle title">Наша команда</h2>
             <ul class="team-list list">
@@ -444,5 +455,15 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <button data-modal-close class="modal-button"> 
+                <svg class="close"width="30" height="30">
+                <use href="./images/sprite.svg#icon-close-1"></use>
+                </svg> 
+            </button>
+        </div>
+    </div> 
+    <script src="./js/modal.js"> </script>
 </body>
 </html>
