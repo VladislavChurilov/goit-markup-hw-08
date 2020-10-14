@@ -485,37 +485,53 @@
                     <use  href="./images/sprite.svg#icon-close-black-18dp-2-1-1"></use>
                 </svg> 
             </button>
-            <h3 class="modal-title title" >
-                Оставьте свои данные, мы вам перезвоним
-                </h3>
+            
             <form class="modal-form" action="">
-                <div class="form-field">
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name"> 
-                </div>
-                <div class="form-field">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel">   
-                </div>
-                <div class="form-field">
-                    <label for="email">Почта</label>
-                    <input type="email" name="email" id="email">    
-                </div>
-                <div class="form-field">           
+                <div class="form-conteiner"> 
 
-                <label for="text">Комментарий</label>
-                <input type="comment" name="text" id="text" placeholder="Введите текст"/>
-                </div>
+                    <div role="group" class="form-conteiner"></div>
+                    <h3 class="modal-title title" >
+                        Оставьте свои данные, мы вам перезвоним
+                        </h3>
+                    <div class="form-field" >                    
+                        <label class="form-field" for="name">Имя</label>
+                        <svg class="icon" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-person-black-18dp-1-1" ></use>
+                        </svg>
+                        <input type="text" name="name" id="name"> 
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <svg class="icon" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-phone-black-18dp-1-1" ></use>
+                        </svg> 
+                        <input type="tel" name="tel" id="tel">   
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Почта</label>
+                        <svg class="icon" width="18" height="18">
+                            <use href="./images/sprite.svg#icon-email-black-18dp-1-1" ></use>
+                        </svg> 
+                        <input type="email" name="email" id="email">    
+                    </div>
+                    <div class="form-field form-field-comment">           
 
-                <div class="agreement" role="group">
-                    <input type="checkbox" name="agreement" value="agreement" id="agreement"/>
-                    <label for="agreement">Соглашаюсь с рассылкой и принимаю 
-                    <a class="link-modal" href="">Условия договора</a>
-                    </label>
-                </div>
+                    <label for="text">Комментарий</label>
+                    <input type="comment" name="text" id="text" placeholder="Введите текст"/>
+                    </div>
 
-                
-                <button class="modal-button" type="submit">Отправить</button>
+                    <div class="agreement" role="group">
+                        <input type="checkbox" name="agreement" value="agreement" id="agreement"/>
+                        <label for="agreement">Соглашаюсь с рассылкой и принимаю 
+                        <a class="link-modal" href="">Условия договора</a>
+                        </label>
+                    </div>
+
+                    <div class="button-conteiner">
+                        <button class="modal-button" type="submit">Отправить</button>
+                    </div>
+                    
+                 </div> 
             </form>
         </div>
     </div> 
