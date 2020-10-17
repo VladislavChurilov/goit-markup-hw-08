@@ -464,6 +464,9 @@ padding-bottom: 60px;
 .footer-address{
     margin-top: 20px;
 }
+.footer-left{
+    min-width: 231px;
+}
  
 .contact-list-item:not(:last-child) {
     margin-bottom: 9px;
@@ -511,6 +514,7 @@ color: var(--dark-theme-color);
 .social-conteiner{
     margin-left: 70px;
     margin-top: 15px;
+    min-width: 210px;
 }
 .social-conteiner>.social-list{
     margin: 0;
@@ -533,6 +537,7 @@ color: var(--dark-theme-color);
     display: block;
     margin-left: 93px;
     margin-top: 15px;
+    min-width: 570px;
 }
 
 .form{
@@ -663,10 +668,11 @@ font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
 letter-spacing: 0.03em;
-margin-top: 40px;
+margin-top: 35px;
 margin-right: 40px;
 margin-left: 40px;
 margin-bottom: 12px;
+min-width: 448px;
 }
   
  .form-conteiner{
@@ -796,6 +802,7 @@ padding-top: 10px;
 padding-bottom: 10px;
 padding-left: 56px;
 padding-right: 55px;
+margin-bottom: 45px;
 }
 .modal-button{
     position: absolute;    
