@@ -1,0 +1,52 @@
+$main-font: "Roboto", sans-serif;
+$secondary-font: "Raleway", sans-serif; 
+$accent-color: #2196F3;
+$dark-theme-color: #FFFFFF;
+$subtitle-light-theme-color: #212121;
+$navigation-list-color: rgba(0, 0, 0, 0.25);
+$text-color: #757575;
+
+
+
+.html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+margin: 0px;
+padding: 0px;  
+}
+body {
+    font-family: $main-font;
+    font-style: normal;    
+}
+img{
+    display: block;
+}
+.conteiner{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.section {
+    padding-top: 215px;
+    padding-bottom: 94px;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.link {
+    text-decoration: none;
+}
+.address {
+    font-style: normal;
+    }
+.title{
+    color: $subtitle-light-theme-color;
+    }
+.text{
+    color: $text-color;
+    }
