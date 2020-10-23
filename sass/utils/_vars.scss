@@ -24,11 +24,51 @@ body {
 img{
     display: block;
 }
+
 .conteiner{
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+    .header &{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+     }
+    .hero & {
+        text-align: center; 
+        padding-bottom: 200px;
+        padding-top: 200px;   
+    }
+    .about-us &{
+        padding-top:  94px;
+        padding-bottom: 94px;
+    }
+    .work &{
+        padding-bottom: 94px;
+    }
+    .team &{
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background: #F5F4FA;
+    }
+    .client &{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    .footer &{
+        display: flex;
+        background: #2F303A;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .portfolio-section &{
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
 }
+
+
+
 .section {
     padding-top: 215px;
     padding-bottom: 94px;

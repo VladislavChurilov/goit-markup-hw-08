@@ -1,40 +1,72 @@
-.client{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+// .client{
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
 .client-list{
     display: flex;
     justify-content: space-between;
-}
-.client-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 170px;
-    height: 90px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.client-item:not(:last-child){
-    margin-right: 30px;
-}
-.icon-client{
-    fill: #afb1b8;
-    transition-property: $accent-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
-}
+    &.client-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 170px;
+        height: 90px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        border: 1px solid $accent-color;
+            &.icon-client {
+            fill: $accent-color;             
+            }       
+        }
+        &.client-item {
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+            &.icon-client{
+                fill: #afb1b8;
+                transition-property: $accent-color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+            }
+        }
+    }
 
-.client-link:hover,
-.client-link:focus {
-    border: 1px solid $accent-color;       
-   }
-.client-link:hover .icon-client,
-.client-link:focus .icon-client{
-    fill: $accent-color;  
+}
+// .client-link{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     cursor: pointer;
+//     width: 170px;
+//     height: 90px;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     transition-property: border;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .client-item:not(:last-child){
+//     margin-right: 30px;
+// }
+// .icon-client{
+//     fill: #afb1b8;
+//     transition-property: $accent-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+// }
+
+// .client-link:hover,
+// .client-link:focus {
+//     border: 1px solid $accent-color;       
+//    }
+// .client-link:hover .icon-client,
+// .client-link:focus .icon-client{
+//     fill: $accent-color;  
      
-   }
+//    }
