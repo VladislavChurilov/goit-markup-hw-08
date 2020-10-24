@@ -14,9 +14,10 @@
         height: 90px;
         border: 1px solid #afb1b8;
         border-radius: 4px;
-        transition-property: border;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition(border);
+        // transition-property: border;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
         border: 1px solid $accent-color;
@@ -30,9 +31,10 @@
             }
             &.icon-client{
                 fill: #afb1b8;
-                transition-property: $accent-color;
-                transition-duration: 250ms;
-                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+                @include  transition($accent-color);
+                // transition-property: $accent-color;
+                // transition-duration: 250ms;
+                // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
             }
         }
     }

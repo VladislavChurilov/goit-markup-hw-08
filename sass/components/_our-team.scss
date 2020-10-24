@@ -62,9 +62,10 @@
         cursor: pointer;
         border-radius: 50%;
         fill: #afb1b8;
-        transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @include  transition(background-color);
+        // transition-property: background-color;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
             &.social-svg{
@@ -74,9 +75,10 @@
         &.social-svg{
             width: 22px;
             height: 22px;
-            transition-property: $dark-theme-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include  transition($dark-theme-color);
+            // transition-property: $dark-theme-color;
+            // transition-duration: 250ms;
+            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }              
     }
 }

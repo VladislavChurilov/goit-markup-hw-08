@@ -60,10 +60,11 @@
             fill: $accent-color;    
         } 
         &.close{
-            fill: #000000;    
-            transition-property: $accent-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            fill: #000000;  
+            @include  transition($accent-color);  
+            // transition-property: $accent-color;
+            // transition-duration: 250ms;
+            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
            
         }  
     }
@@ -106,9 +107,10 @@
             position: absolute;
             top: 30px;
             left: 12px;
-            transition-property: $accent-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include  transition($accent-color);
+            // transition-property: $accent-color;
+            // transition-duration: 250ms;
+            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         & label{
             font-weight: 400;
@@ -127,9 +129,10 @@
             padding-bottom: 12px;
             padding-left: 16px;
             padding-right: 16px; 
-            transition-property: $accent-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include  transition($accent-color);
+            // transition-property: $accent-color;
+            // transition-duration: 250ms;
+            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             }
         &:hover input,
         &:focus-within input,

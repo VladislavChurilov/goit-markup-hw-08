@@ -33,9 +33,10 @@
         line-height: 1.714;
         letter-spacing: 0.03em;
         color: $dark-theme-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+        @include  transition(color);
+        // transition-property: color;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     }
     .contact-list-link {
         font-style: normal;
@@ -44,9 +45,10 @@
         line-height: 1.714;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+        @include  transition(color);
+        // transition-property: color;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
     }
 }
 // .logo-white{
@@ -121,9 +123,10 @@
     border-radius: 50%;
     fill: $dark-theme-color;
     background: rgba(255, 255, 255, 0.1);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include  transition(background-color);
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscription-conteiner{
