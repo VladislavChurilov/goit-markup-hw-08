@@ -31,7 +31,7 @@
             }
             &.icon-client{
                 fill: #afb1b8;
-                @include  transition($accent-color);
+                @include  transition(fill);
                 // transition-property: $accent-color;
                 // transition-duration: 250ms;
                 // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
