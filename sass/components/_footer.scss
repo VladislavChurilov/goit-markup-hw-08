@@ -1,19 +1,19 @@
 // .footer>.conteiner{
 //     display: flex;
 // }
-// .footer {
-// display: flex;
-// background: #2F303A;
-// padding-top: 60px;
-// padding-bottom: 60px;
-// }
+ .footer {
+ display: flex;
+ background: #2F303A;
+ padding-top: 60px;
+ padding-bottom: 60px;
+ }
 
 // .footer-address{
 //     margin-top: 20px;
-// }
+//  }
 .footer-left{
     min-width: 231px;
-    &.footer-address{
+    .footer-address{
         margin-top: 20px;
     }
 }
@@ -22,11 +22,8 @@
     &:not(:last-child) {
         margin-bottom: 9px;
     }
-    &:hover,
-    &:focus {
-    color: $accent-color;    
-    }
-    &.contact-list-link-map {
+    
+    .contact-list-link-map {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -37,6 +34,10 @@
         // transition-property: color;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+        &:hover,
+        &:focus {
+        color: $accent-color;    
+        }
     }
     .contact-list-link {
         font-style: normal;
@@ -49,6 +50,10 @@
         // transition-property: color;
         // transition-duration: 250ms;
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+        &:hover,
+        &:focus {
+        color: $accent-color;    
+        }
     }
 }
 // .logo-white{
@@ -96,12 +101,14 @@
     margin-top: 15px;
     min-width: 210px;
     
-    &.social-list{
-        margin: 0;  
+    
+    .social-list{
+        display: flex;
+        margin: 0;
+          
     }
 }
-
-&.footer-title{
+.footer-title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
@@ -109,7 +116,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: $dark-theme-color;
-}
+    }
 // .social-conteiner>.social-list{
 //     margin: 0;
 // }
@@ -127,6 +134,24 @@
     // transition-property: background-color;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;    
+    }
+    .social-svg{
+        width: 22px;
+        height: 22px;
+        @include  transition($dark-theme-color);
+        // transition-property: $dark-theme-color;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+}
+.social-item{
+    
+    &:not(:last-child){
+        margin-right: 10px;
+    }
 }
 
 .subscription-conteiner{
@@ -151,7 +176,7 @@
             color: rgba(255, 255, 255, 0.6)
         }
     }
-    &.input{
+    .input{
         width: 358px;
         height: 50px;
         
@@ -185,7 +210,7 @@
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    &.form-svg{
+    .form-svg{
         margin-left: 10px;
     }
 }

@@ -6,7 +6,7 @@
 .team-list{
     display: flex;
     justify-content: center;
-    &.about-list-item{
+    .about-list-item{
         width: 270px;
         height: 428px;
         padding-bottom: 30px;
@@ -18,16 +18,16 @@
         &:not(:last-child){
             margin-right: 30px;
         }
-        &.team-conteiner{
+        .team-conteiner{
             text-align: center;
             padding-top: 30px;
-            &.team-name {
+            .team-name {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 1.188;
                 letter-spacing: 0.03em;
             }
-            &.team-position {
+            .team-position {
                 margin-top: 10px;
                 margin-bottom: 16px;
                 font-weight: 400;
@@ -35,7 +35,7 @@
                 line-height: 1.188;
                 letter-spacing: 0.03em;
             }
-            &.social-list{
+            .social-list{
                 display: flex;
                 justify-content: space-between;
                 margin-right: 32px;
@@ -46,14 +46,11 @@
 }
 
 .social-item{
-    &:hover,
-    &:focus {
-        background-color: $accent-color;    
-    }
+    
     &:not(:last-child){
         margin-right: 10px;
     }
-    &.social-link {
+    .social-link {
         display: flex; 
         align-items: center;
         justify-content: center;
@@ -68,11 +65,15 @@
         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
         &:focus {
-            &.social-svg{
+        background-color: $accent-color;    
+        }
+        &:hover,
+        &:focus {
+            .social-svg{
             fill: $dark-theme-color;            
             }   
         }
-        &.social-svg{
+        .social-svg{
             width: 22px;
             height: 22px;
             @include  transition($dark-theme-color);

@@ -21,9 +21,10 @@ img{
     padding: 0 15px;
     margin: 0 auto;
     .header &{
-        display: flex;
+        display: flex;        
         align-items: center;
         justify-content: space-between; 
+    
      }
     .hero & {
         text-align: center; 
@@ -48,14 +49,9 @@ img{
     }
     .footer &{
         display: flex;
-        background: #2F303A;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        
     }
-    .portfolio-section &{
-        padding-bottom: 94px;
-        padding-top: 94px;
-    }
+    
 }
 
 

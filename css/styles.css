@@ -821,9 +821,7 @@ margin-bottom: 45px;
     padding-top: 94px;
     }
 
-.work-list{
-    flex-wrap: wrap;
-}
+
 
 .portfolio-btn {
     display: flex;
@@ -862,14 +860,20 @@ cursor: pointer;
 }
 /* ===END BUTTON==== */
 /* =====WORK LIST===== */
+.work-list{
+    flex-wrap: wrap;
+}
+
 .work-type{
     position: relative;
     display: flex;    
     }
-.work-link{
+/* .work-link{
 /* width: 370px; */
-/* overflow: hidden; */
-}    
+/* overflow: hidden;
+} */
+
+    
 .work-type :hover.link,
 .work-type :focus.link{        
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 

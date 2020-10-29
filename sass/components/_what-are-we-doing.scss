@@ -14,12 +14,12 @@
 .work-list{
     display: flex;
     justify-content: center;
-    &.work-item{
+    .work-item{
         position: relative;
         &:not(:last-child) {
         margin-right: 30px; 
         }
-        &.image-title-conteiner{
+        .image-title-conteiner{
             position: absolute;
             display: flex;
             justify-content: center;
@@ -29,7 +29,7 @@
             background: rgba(47, 48, 58, 0.8);
             width: 370px;
             height: 70px;
-            &.image-title{
+            .image-title{
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 1.143;

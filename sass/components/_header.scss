@@ -2,30 +2,34 @@
 
 .header{
     padding-bottom: 25px;  
-   padding-top: 24px;   
-   
+    padding-top: 24px; 
 }
 
+
 .navigation {
-   display: flex;
-    &.navigation-list {
-    margin-left: 93px;
-    display: flex;
-    align-self: center;
-        &.navigation-list-item {
-            display: flex;
+    display: flex;  
+    
+     .navigation-list {
+     display: flex;    
+     align-self: center;
+     margin-left: 93px; 
+     margin-left: 100px;   
+        .navigation-list-item {
+            display: inline-flex;
+        
             &:not(:last-child) {
                 margin-left: auto;
                 margin-right: 50px;
+            
             }
-            &.navigation-list-link {
+            .navigation-list-link{         
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 1.143;
                 letter-spacing: 0.02em;
                 color: $subtitle-light-theme-color; 
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                @include  transition (color);
+                @include  transition(color);
                 // transition-property: color;                
                 // transition-duration: 250ms;
                 // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,7 +38,7 @@
                     color: $accent-color; 
                 }
             }
-            &.navigation-list-link-active{   
+            .navigation-list-link-active{   
                 position: relative;
                 font-weight: 500;
                 font-size: 14px;
@@ -45,75 +49,112 @@
                 align-items: center;
                 &::after{    
                     position: absolute;
-                     content: "";
+                    content: "";
                     display: block;
-                      /* margin: 0 avto;  */
-                     margin-top: 28px; 
+                    /* margin: 0 avto;  */
+                    margin-top: 28px; 
                     width: 100%;
                     height: 4px;
-                     background-color: $accent-color;
-                     border-radius: 2px;
+                    background-color: $accent-color;
+                    border-radius: 2px;
                 }    
             }            
-        }      
-    }
-}
+        }       
+     }
+ }
 
-.address-list {
-    display: flex;
-    align-self: center;
+//  .navigation-list-item {
+//      display: inline-flex;
     
-    &.address-list-link{
-        &:not(:last-child) {
-        margin-left: auto;
-        margin-right: 50px;
-        }
-        //  &:hover,
-        //  &:focus {
-        //      color: $accent-color;
-        //      &.address-svg{
-        //      fill: $accent-color;
-        //      @include  transition(accent-color);
-        //         // transition-property: $accent-color;            
-        //         // transition-duration: 250ms;
-        //         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
-        //      }    
-        // }
-        &.mail-link,
-        &.tel-link {
-        display: flex;
-        align-items: center;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.143;
-        letter-spacing: 0.02em;
-        color: $text-color;
-        @include  transition(color);
-        // transition-property: color;        
-        // transition-duration: 250ms;
-        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover,
-            &:focus {
-                color: $accent-color;
-                &.address-svg {
-                fill: $accent-color;
-                // @include  transition(accent-color);
-                // transition-property: $accent-color;            
-                // transition-duration: 250ms;
-                // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
-                }    
-            }
-            &.address-svg {
-            fill: $text-color;
-            margin-right: 10px;  
-            @include  transition(fill);          
-            }
+//      &:not(:last-child) {
+//          margin-left: auto;
+//          margin-right: 50px;
+        
+//      }
+//     .navigation-list-link{         
+//          font-weight: 500;
+//          font-size: 14px;
+//          line-height: 1.143;
+//          letter-spacing: 0.02em;
+//          color: $subtitle-light-theme-color; 
+//          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//          @include  transition(color);
+//          // transition-property: color;                
+//          // transition-duration: 250ms;
+//          // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//          &:hover,
+//          &:focus {
+//              color: $accent-color; 
+//          }
+//      }
+//     .navigation-list-link-active{   
+//          position: relative;
+//          font-weight: 500;
+//          font-size: 14px;
+//          line-height: 1.143;
+//          letter-spacing: 0.02em;
+//          color: $accent-color;
+//          display: block;
+//          align-items: center;
+//          &::after{    
+//              position: absolute;
+//               content: "";
+//              display: block;
+//                /* margin: 0 avto;  */
+//               margin-top: 28px; 
+//              width: 100%;
+//              height: 4px;
+//               background-color: $accent-color;
+//               border-radius: 2px;
+//          }    
+//      }            
+//  }
+
+ .address-list {
+     display: flex;
+     align-self: center;
+    
+     .address-list-link {
+         &:not(:last-child) {
+         margin-left: auto;
+         margin-right: 50px;
+         }
+         .mail-link,
+         .tel-link {
+         display: flex;
+         align-items: center;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 1.143;
+         letter-spacing: 0.02em;
+         color: $text-color;
+         @include  transition(color);
+         // transition-property: color;        
+         // transition-duration: 250ms;
+         // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+             &:hover,
+             &:focus {
+                 color: $accent-color;
+                 .address-svg {
+                 fill: $accent-color;
+                 // @include  transition(accent-color);
+                 // transition-property: $accent-color;            
+                 // transition-duration: 250ms;
+                 // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
+                 }    
+             }
+             .address-svg {
+             fill: $text-color;
+             margin-right: 10px;  
+             @include  transition(fill);          
+             }
                 
-        }           
-    }
+         }        
+     }
     
     
-}
+ }
+ 
 
 // .navigation-list-item:not(:last-child),
 // .address-list-link:not(:last-child) {
