@@ -1,76 +1,44 @@
-// .work{
-//     padding-bottom: 94px;
+
+@media screen and (min-width: $mobile){
+
+}   
+
+
+// .subtitle{
+//     text-align: center;
+//     margin-bottom: 50px;
+
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.167;
+//     letter-spacing: 0.03em;
 // }
-
-.subtitle{
-    text-align: center;
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    letter-spacing: 0.03em;
-}
-.work-list{
-    display: flex;
-    justify-content: center;
-    .work-item{
-        position: relative;
-        &:not(:last-child) {
-        margin-right: 30px; 
-        }
-        .image-title-conteiner{
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            bottom: 0;
-            left: 0; 
-            background: rgba(47, 48, 58, 0.8);
-            width: 370px;
-            height: 70px;
-            .image-title{
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 1.143;
-                letter-spacing: 0.03em;
-                color: $dark-theme-color;
-            }
-        
-        }  
-    }    
-}
-// .work-item:not(:last-child) {
-//  margin-right: 30px; 
-//  }
-
-
-// .work-item{
-//     position: relative;
-// }
-// .image-title-conteiner{
-//     position: absolute;
+// .work-list{
 //     display: flex;
 //     justify-content: center;
-//     align-items: center;
-//     bottom: 0;
-//     left: 0; 
-//     background: rgba(47, 48, 58, 0.8);
-//     width: 370px;
-//     height: 70px;
-//     .image-title{
-//         font-weight: 700;
-//         font-size: 14px;
-//         line-height: 1.143;
-//         letter-spacing: 0.03em;
-//         color: $dark-theme-color;
-//     }
-
-// }
-// .image-title{
-// font-weight: 700;
-// font-size: 14px;
-// line-height: 1.143;
-// letter-spacing: 0.03em;
-// color: $dark-theme-color;
+//     .work-item{
+//         position: relative;
+//         &:not(:last-child) {
+//         margin-right: 30px; 
+//         }
+//         .image-title-conteiner{
+//             position: absolute;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             bottom: 0;
+//             left: 0; 
+//             background: rgba(47, 48, 58, 0.8);
+//             width: 370px;
+//             height: 70px;
+//             .image-title{
+//                 font-weight: 700;
+//                 font-size: 14px;
+//                 line-height: 1.143;
+//                 letter-spacing: 0.03em;
+//                 color: $dark-theme-color;
+//             }
+        
+//         }  
+//     }    
 // }

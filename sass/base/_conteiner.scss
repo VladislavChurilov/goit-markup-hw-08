@@ -15,51 +15,86 @@ body {
 img{
     display: block;
 }
-
 .conteiner{
-    width: 1200px;
+    width: 100%;
     padding: 0 15px;
-    margin: 0 auto;
-    .header &{
-        display: flex;        
-        align-items: center;
-        justify-content: space-between; 
+            .header &{
+                display: flex;        
+                align-items: center;
+                justify-content: space-between; 
+            
+             }
+            // .hero & {
+            //     text-align: center; 
+            //     padding-bottom: 200px;
+            //     padding-top: 200px;   
+            // }
+            .about-us &{
+                padding-top:  60px;
+                padding-bottom: 60px;
+            }
+            .work &{
+                padding-bottom: 94px;
+            }
+            .team &{
+                padding-top: 94px;
+                padding-bottom: 94px;
+                background: #F5F4FA;
+            }
+            .client &{
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
+            .footer &{
+                display: flex;
+                
+            }
+}
+
+// .conteiner{
+//     width: 1200px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+//     .header &{
+//         display: flex;        
+//         align-items: center;
+//         justify-content: space-between; 
     
-     }
-    .hero & {
-        text-align: center; 
-        padding-bottom: 200px;
-        padding-top: 200px;   
-    }
-    .about-us &{
-        padding-top:  94px;
-        padding-bottom: 94px;
-    }
-    .work &{
-        padding-bottom: 94px;
-    }
-    .team &{
-        padding-top: 94px;
-        padding-bottom: 94px;
-        background: #F5F4FA;
-    }
-    .client &{
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-    .footer &{
-        display: flex;
+//      }
+//     .hero & {
+//         text-align: center; 
+//         padding-bottom: 200px;
+//         padding-top: 200px;   
+//     }
+//     .about-us &{
+//         padding-top:  94px;
+//         padding-bottom: 94px;
+//     }
+//     .work &{
+//         padding-bottom: 94px;
+//     }
+//     .team &{
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+//         background: #F5F4FA;
+//     }
+//     .client &{
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+//     }
+//     .footer &{
+//         display: flex;
         
-    }
+//     }
     
-}
+// }
 
 
 
-.section {
-    padding-top: 215px;
-    padding-bottom: 94px;
-}
+// .section {
+//     padding-top: 215px;
+//     padding-bottom: 94px;
+// }
 .list {
     list-style: none;
     margin: 0;
@@ -77,3 +112,5 @@ img{
 .text{
     color: $text-color;
     }
+    
+    
