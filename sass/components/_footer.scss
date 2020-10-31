@@ -1,7 +1,28 @@
 
-@media screen and (min-width: $mobile){
 
-}   
+
+@media screen and (min-width: $mobile){
+    .conteiner{
+        width: $mobile;
+        margin: 0 auto;
+    }
+    
+} 
+
+
+@media screen and (min-width: $tablet){
+    .conteiner{
+        width: $tablet;
+    }
+}
+
+
+@media screen and (min-width: $desktop){
+    .conteiner{
+        width: $desktop;
+        
+    }
+}  
 
 //  .footer {
 //  display: flex;

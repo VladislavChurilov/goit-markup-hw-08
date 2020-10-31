@@ -20,7 +20,6 @@ img {
 }
 
 .conteiner {
-  width: 100%;
   padding: 0 15px;
 }
 
@@ -484,5 +483,24 @@ img {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
