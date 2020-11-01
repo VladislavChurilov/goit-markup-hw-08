@@ -1182,6 +1182,9 @@ img {
     margin-left: 0;
     margin-bottom: 0;
   }
+  .contact-list {
+    text-align: left;
+  }
   .social-conteiner {
     width: 206px;
     margin-left: 70px;
