@@ -11,13 +11,7 @@
         opacity: 0;
         pointer-events: none;    
     }
-}    
-     
-
-// .backdrop.is-hidden {
-//     opacity: 0;
-//     pointer-events: none;    
-// }
+}  
 
 .modal{
     position: absolute;
@@ -59,10 +53,7 @@
         } 
         .close{
             fill: #000000;  
-            @include  transition($accent-color);  
-            // transition-property: $accent-color;
-            // transition-duration: 250ms;
-            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include  transition($accent-color);        
            
         }  
     }
@@ -105,10 +96,7 @@
             position: absolute;
             top: 30px;
             left: 12px;
-            @include  transition($accent-color);
-            // transition-property: $accent-color;
-            // transition-duration: 250ms;
-            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include  transition($accent-color);            
             }
         & label{
             font-weight: 400;
@@ -127,10 +115,7 @@
             padding-bottom: 12px;
             padding-left: 16px;
             padding-right: 16px; 
-            @include  transition($accent-color);
-            // transition-property: $accent-color;
-            // transition-duration: 250ms;
-            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @include  transition($accent-color);            
             }
         &:hover input,
         &:focus-within input,

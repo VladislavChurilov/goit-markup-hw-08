@@ -11,6 +11,13 @@ color: #000000;
 color: $accent-color;
 }
 .logo-white {
+    padding-left: 163px;
+    padding-right: 163px;
+    
 @extend .logo;
 color: $dark-theme-color;
+@media screen and (min-width: $tablet){                    
+    padding-left: 39px;
+    padding-right: 204px;
+    }
 }

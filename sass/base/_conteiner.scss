@@ -19,42 +19,90 @@ img{
 .conteiner{
     // width: 100%;
     padding: 0 15px;
-            .header &{
-                display: flex;        
-                align-items: center;
-                justify-content: space-between; 
+     
+    .header &{
+        display: flex;        
+        align-items: center;
+        justify-content: space-between; 
+    
+     }
+    // .hero & {
+    //     text-align: center; 
+    //     padding-bottom: 200px;
+    //     padding-top: 200px;   
+    // }
+    .about-us &{
+        padding-top:  60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: $desktop){                    
+            padding-top: 94px;
+            padding-bottom: 94px;
+        } 
+    }
+    .work &{
+        padding-top:  60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: $desktop){                    
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+        
+    }
+    .team &{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: #F5F4FA;
+        
+        @media screen and (min-width: $desktop){                    
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }                 
+    }
+    // @media screen and (min-width: $desktop){
+    //     .team &{
+    //         padding-top: 94px;
+    //         padding-bottom: 94px;                       
+    //     }                
+    // }
+    .client &{
+        display: block;
+        padding-top:  60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: $desktop){                    
+            padding-top: 94px;
+            padding-bottom: 94px;
+           
+        }
+    }
+    .footer &{
+        display: block;
+        padding-top:  60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: $tablet) and (max-width: 1199px) {                    
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: $desktop){                    
+            display: flex;
             
-             }
-            // .hero & {
-            //     text-align: center; 
-            //     padding-bottom: 200px;
-            //     padding-top: 200px;   
-            // }
-            .about-us &{
-                padding-top:  60px;
-                padding-bottom: 60px;
-            }
-            .work &{
-                padding-bottom: 94px;
-            }
-            .team &{
-                padding-top: 60px;
-                padding-bottom: 60px;
-                background: #F5F4FA;
-            }
-            .client &{
-                padding-top: 94px;
-                padding-bottom: 94px;
-            }
-            .footer &{
-                display: flex;
-                
-            }
+        }
+    }  
+    .portfolio-section &{
+        padding-top: 60px;
+        padding-bottom: 60px;   
+        @media screen and (min-width: $tablet){                    
+            display: block;
+        }            
+        @media screen and (min-width: $desktop){                    
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }                 
+    }       
 }
 .subtitle{
             
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     font-weight: 700;
     font-size: 36px;

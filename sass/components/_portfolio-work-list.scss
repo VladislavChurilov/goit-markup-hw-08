@@ -4,26 +4,17 @@
 }
 .work-type{
     position: relative;
-    display: flex;
-    &:not(:nth-child(3n+0)){
-        margin-right: 30px;
-    }
-    &:not(:nth-last-child(-n+3)){
-        margin-bottom: 30px;
-    }
+    display: flex;    
+    
     &:hover,
     &:focus {
         .link{
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
             0px 4px 4px rgba(0, 0, 0, 0.06), 
             1px 4px 6px rgba(0, 0, 0, 0.16);
-            @include  transition(box-shadow);
-            // transition-property: box-shadow;
-            // transition-duration: 250ms;
-            // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+            @include  transition(box-shadow);             
         }
     }
-
 }
 
 .work-link{
@@ -81,6 +72,49 @@
         letter-spacing: 0.03em;
     }
 }
+@media screen and (min-width: $mobile){
+    .conteiner{
+        width: $mobile;        
+    } 
+    .work-type{
+        &:not(:last-child) {
+        margin-bottom: 30px;
+        }
+    }  
+}
+
+@media screen and (min-width: $tablet){
+    .conteiner{
+        width: $tablet;
+    }
+    
+    .work-list{
+        display: flex;
+        flex-wrap: wrap;        
+        .work-type{
+            width: 354px;
+            &:nth-child(2n+1){
+                margin-right: 30px;
+            } 
+        }
+    }
+}    
+@media screen and (min-width: $desktop){    
+    .conteiner{        
+        width: $desktop;  
+              
+    }
+    .work-type{
+    &:not(:nth-child(3n+0)){
+        margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n+3)){
+        margin-bottom: 30px;
+    }
+    }
+}
+
+
     // .work-link:hover .work-description,
     // .work-link:focus .work-description{
     //     background: rgba(33, 150, 243, 0.9);
