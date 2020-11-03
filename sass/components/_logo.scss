@@ -1,8 +1,10 @@
 .logo {
+    display: flex;
+    align-items: center;
 font-family: $secondary-font;
 font-weight: 700;
-font-size: 26px;
-line-height: 1.192;
+font-size: 24px;
+line-height: 1.167;
 letter-spacing: 0.03em;
 color: #000000;
 }
@@ -16,8 +18,24 @@ color: $accent-color;
     
 @extend .logo;
 color: $dark-theme-color;
-@media screen and (min-width: $tablet){                    
-    padding-left: 39px;
-    padding-right: 204px;
+}
+// @media screen and (min-width: $tablet){                    
+//     padding-left: 39px;
+//     padding-right: 204px;
+//     }
+// 
+@media screen and (min-width: $mobile){
+
+}
+@media screen and (min-width: $tablet){
+    .logo-white {
+        padding-left: 39px;
+        padding-right: 204px;  
     }
+}
+@media screen and (min-width: $desktop){
+    .logo {        
+        font-size: 26px;
+        line-height: 1.192;        
+    }    
 }
