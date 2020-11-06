@@ -4,7 +4,7 @@
     
 }
 
-@media screen and (min-width: 320px)  and (max-width: 767px) {
+@media screen and  (max-width: 767px) {
     .navigation{
         display: flex;
         width: 100%;
@@ -65,7 +65,8 @@
             
             align-items: center;
             justify-content: center;
-            overflow: hidden;
+            // overflow: hidden;
+            z-index: 1;
             
         } 
         .navigation-list,

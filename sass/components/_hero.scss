@@ -15,7 +15,7 @@
         line-height: 1.615;
         letter-spacing: 0.06em;
         color: $dark-theme-color;
-        width: 360px;
+        // min-width: 362px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -125,9 +125,15 @@
             width: $mobile;
             margin: 0 auto;
         }
-        
+        .hero-title {
+            width: 360px;
+         }
     }   
-    
+    @media screen and (max-width: 320px){
+            .hero-title {
+               min-width: 320px;
+            }
+        }
     @media screen and (min-width: $tablet) {
         // .hero{
         //     // background-image: url(./images/background/.jpg);
@@ -138,6 +144,7 @@
         .dark-theme-hero{
             display: block;
         }
+        
     }
     
     @media screen and (min-width: $desktop){

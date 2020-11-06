@@ -17,7 +17,7 @@ img{
     display: block;
 }
 .conteiner{
-     width: 100%;
+    width: 100%;
     padding: 0 15px;
      
     .header &{
@@ -50,7 +50,7 @@ img{
     .team &{
         padding-top: 60px;
         padding-bottom: 60px;
-                
+               
         @media screen and (min-width: $desktop){                    
             padding-top: 94px;
             padding-bottom: 94px;

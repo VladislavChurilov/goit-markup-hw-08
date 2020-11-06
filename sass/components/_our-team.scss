@@ -1,5 +1,6 @@
 .team{
      background: #F5F4FA;
+     
 }
 .about-list-item {
     width: 450px;
@@ -69,13 +70,22 @@
         }              
     }
 }   
-   
+// @media screen and (min-width: 320px) and (max-width: $mobile){
+//     .team &{
+//         width: 480px;
+//         margin: 0 auto;
+//     }
+    
+// }   
 
-@media screen and (min-width: $mobile){
-    .conteiner{
+@media screen and (min-width: 320px) and (max-width: $mobile){
+    .team{
         width: $mobile;
-        margin: 0 auto;
     }
+    // .conteiner{
+    //     width: $mobile;
+    //     margin: 0 auto;
+    // }
     
 } 
 
