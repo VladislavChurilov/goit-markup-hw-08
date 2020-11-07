@@ -97,7 +97,7 @@
     
     .subscription-conteiner{
         display: block;        
-        width: 450px;
+        // width: 450px;
     }
     
     .form{
@@ -116,7 +116,7 @@
             }
         }
         .input{
-            width: 450px;
+            // width: 450px;
             height: 50px;
             margin-bottom: 20px;
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -154,7 +154,26 @@
             margin-left: 10px;
         }
     }
-
+    @media screen and (min-width: 320px)and (max-width:$mobile) {
+        
+    .social-conteiner{
+        padding-top: 60px;
+    }
+    .subscription-conteiner{
+        display: block;
+        justify-content: center;
+        align-items: center;        
+        min-width: 320px;
+    } 
+    .footer-title{
+        // min-width: 320px;
+        text-align: center;
+    }
+    .input{
+        min-width: 320px;
+    }
+}
+     
 @media screen and (min-width: $mobile){
     .conteiner{
         width: $mobile;
@@ -163,8 +182,15 @@
     .footer-left{
         margin-bottom: 60px;
     }
+    .input{
+        width: 450px;
+    }
 } 
-
+@media screen and (max-width: $desktop){
+   .footer-title{
+        text-align: center;
+    } 
+}
 
 @media screen and (min-width: $tablet){
     .conteiner{
@@ -212,10 +238,11 @@
     .subscription-conteiner{        
         width: 570px;
         margin-top: 12px;
+        margin-left: 0;
         .footer-title{
             text-align: start;
         }
-        margin-left: 0;
+        
         .form{
             display: flex;
             align-items: center;
