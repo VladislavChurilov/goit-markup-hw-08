@@ -169,9 +169,17 @@
         // min-width: 320px;
         text-align: center;
     }
-    .input{
-        min-width: 320px;
+    .form{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+        .input{
+                min-width: 100%;
+                     
+            }
     }
+    
 }
      
 @media screen and (min-width: $mobile){
