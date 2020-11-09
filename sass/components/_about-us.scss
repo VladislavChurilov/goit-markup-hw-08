@@ -38,7 +38,7 @@
 @media screen and (max-width: 767px){
     .about-item{
         .icon-conteiner{
-            min-width: 320px;
+            min-width: 100%;
         }
         &:not(:last-child) {
             margin-bottom: 30px;   

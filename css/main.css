@@ -216,7 +216,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 480px;
+    min-width: 320px;
     height: 453px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -893,7 +893,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .about-item .icon-conteiner {
-    min-width: 320px;
+    min-width: 100%;
   }
   .about-item:not(:last-child) {
     margin-bottom: 30px;
@@ -1157,21 +1157,18 @@ img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  .team {
-    min-width: 320px;
-  }
   .team .conteiner {
-    width: 100%;
+    min-width: 320px;
   }
   .social-list {
     padding-bottom: 24px;
   }
   .about-list-item {
-    min-width: 320px;
+    width: 100%;
   }
   .about-list-img {
     display: block;
-    width: 320px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -1670,7 +1667,6 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -1886,6 +1882,27 @@ img {
   margin-bottom: 45px;
 }
 
+@media screen and (min-width: 320px) {
+  .form-field:hover label, .form-field:focus label {
+    color: #2196F3;
+  }
+  .form-field label {
+    color: #757575;
+    -webkit-transition-property: #2196F3;
+    transition-property: #2196F3;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-conteiner {
+    min-width: 320px;
+  }
+  .menu-conteiner.is-open {
+    min-width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
@@ -1906,21 +1923,6 @@ img {
   }
   .agreement label {
     font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .form-field:hover label, .form-field:focus label {
-    color: #2196F3;
-  }
-  .form-field label {
-    color: #757575;
-    -webkit-transition-property: #2196F3;
-    transition-property: #2196F3;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

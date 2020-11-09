@@ -80,27 +80,29 @@
 // 
 @media screen and (min-width: 320px) and (max-width: $mobile) {
     .team{
-        min-width: 320px;
+        // min-width: 320px;
         .conteiner{
-            width: 100%;
+            min-width: 320px;
         }
     }
     .social-list{
         padding-bottom:  24px;
     }
     .about-list-item{
-        min-width: 320px;
+        width: 100%;
     }
     .about-list-img{
         display: block;
         // max-width: 450px;
         // min-width: 320px;
-        width: 320px;
+        width: 100%;
+        
         height: auto;
         margin: 0 auto;
     }
      img {
         display: block;
+        
         max-width: 100%;
         height: auto; 
     }
