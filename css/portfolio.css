@@ -918,6 +918,23 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .work-type {
+    min-width: 320px;
+  }
+  .work-type:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .work-type .work-link {
+    min-width: 320px;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
@@ -955,6 +972,9 @@ img {
   }
   .work-type:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
+  }
+  .work-type:nth-last-child(-n+3) {
+    margin-bottom: 0px;
   }
 }
 
