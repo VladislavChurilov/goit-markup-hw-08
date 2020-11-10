@@ -1546,7 +1546,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-width: 320px;
+    width: 100%;
   }
   .footer-title {
     text-align: center;
@@ -1561,7 +1561,7 @@ img {
             justify-content: center;
   }
   .form .input {
-    min-width: 100%;
+    width: 100%;
   }
 }
 

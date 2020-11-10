@@ -163,7 +163,7 @@
         display: block;
         justify-content: center;
         align-items: center;        
-        min-width: 320px;
+        width: 100%;
     } 
     .footer-title{
         // min-width: 320px;
@@ -175,7 +175,7 @@
         justify-content: center;
         
         .input{
-                min-width: 100%;
+                width: 100%;
                      
             }
     }
