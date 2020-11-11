@@ -920,13 +920,13 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .work-type {
-    min-width: 320px;
+    width: 100%;
   }
   .work-type:not(:last-child) {
     margin-bottom: 30px;
   }
   .work-type .work-link {
-    min-width: 320px;
+    width: 100%;
   }
   img {
     display: block;
